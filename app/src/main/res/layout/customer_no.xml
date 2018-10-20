@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="116dp"
+        android:layout_height="108dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        app:srcCompat="@drawable/buyer" />
+
+    <TextView
+        android:id="@+id/textViewname"
+        android:layout_width="83dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="24dp"
+        android:text="Name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="142dp" />
+
+    <TextView
+        android:id="@+id/textViewphone"
+        android:layout_width="111dp"
+        android:layout_height="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textViewname"
+        android:layout_marginTop="72dp"
+        android:autoLink="phone"
+        android:text="12 123 1234"
+        android:layout_alignLeft="@+id/textViewname" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:text=""
+        android:checked="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp" />
+
+</RelativeLayout>

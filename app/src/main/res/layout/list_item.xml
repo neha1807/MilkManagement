@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewdate"
+        android:layout_width="376dp"
+        android:layout_height="123dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:text="Date"
+        android:textColor="@color/colorRed"
+        android:textSize="30dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewdate"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Price"
+        android:textColor="@color/colorPurple"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textViewquantity"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignBaseline="@+id/textViewdate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="129dp"
+        android:fontFamily="serif-monospace"
+        android:text="Quantity"
+        android:textColor="@color/colorGreen"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="129dp" />
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Milkman">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:clipToPadding="false">
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/cardview"
+            android:layout_margin="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/colorSkyBlue"
+                >
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:padding="10dp"
+                    android:src="@drawable/allcustomer1"
+                    android:background="@drawable/circlebackground"
+                    android:clickable="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADD CUSTOMER"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorGreen"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:id="@+id/cardview1"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorSkyBlue"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:padding="10dp"
+                    android:clickable="true"
+                    android:src="@drawable/allcustomer2"
+                    android:background="@drawable/circlebackground"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ALL CUSTOMERS"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorGreen"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:id="@+id/cardview2"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+
+
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorSkyBlue"
+
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/circlebackground"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:src="@drawable/edit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:text="View/Update/delete CUSTOMER"
+                    android:textColor="@color/colorGreen" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="190dp"
+        android:id="@+id/cardview3"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+
+
+
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorSkyBlue"
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/circlebackground"
+                android:clickable="true"
+                android:padding="10dp"
+                android:src="@drawable/bill" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="GENERATE BILL"
+                android:layout_gravity="center"
+                android:textColor="@color/colorGreen" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

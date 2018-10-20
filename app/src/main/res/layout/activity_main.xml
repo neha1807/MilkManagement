@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/spilledmilk1"
+
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextquantity"
+        android:layout_width="280dp"
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/edit_round"
+        android:drawableLeft="@drawable/ic_action_qua"
+        android:drawablePadding="10dp"
+        android:ems="10"
+
+        android:hint="Enter Quantity"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/editTextrate"
+        android:layout_width="283dp"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="152dp"
+        android:background="@drawable/edit_round"
+        android:drawableLeft="@drawable/ic_action_rate"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Enter Rate per litre"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/editTextdate"
+        android:layout_width="306dp"
+        android:layout_height="48dp"
+        android:layout_alignEnd="@+id/editTextquantity"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/editTextquantity"
+        android:layout_marginEnd="-19dp"
+        android:layout_marginRight="-19dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/edit_round"
+        android:drawableLeft="@drawable/ic_stat_name"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Enter Date when You Start Buying Milk "
+        android:focusable="false"
+        android:clickable="true"
+
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:id="@+id/buttonproceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:background="@drawable/buttonshape"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="PROCEED"
+
+         />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="133dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="194dp"
+        android:layout_marginStart="46dp"
+        android:text="Select Type"
+        android:textStyle="bold"
+        android:layout_marginLeft="46dp"
+        android:layout_alignParentLeft="true" />
+
+    <RadioGroup
+        android:layout_width="363dp"
+        android:layout_height="52dp"
+        android:id="@+id/radiogroup"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp" />
+
+    <RadioButton
+        android:id="@+id/radioButtoncow"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonproceed"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="-194dp"
+        android:text="Cow"
+        android:layout_alignLeft="@+id/buttonproceed" />
+
+    <RadioButton
+        android:id="@+id/radioButtonbuffalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/radioButtoncow"
+        android:layout_marginEnd="135dp"
+        android:text="Buffalo"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="135dp" />
+
+</RelativeLayout>

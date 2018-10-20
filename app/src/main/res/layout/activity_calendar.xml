@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".CalendarActivity">
+
+    <FrameLayout
+        android:id="@+id/upperFrame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.squareup.timessquare.CalendarPickerView
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.squareup.timessquare.CalendarPickerView>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/lowerFrame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linearquery">
+
+            <EditText
+                android:id="@+id/textqua"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:text="Quantity"
+                android:fontFamily="cursive"
+                android:textColor="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/textrate"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:text="Rate"
+                android:fontFamily="cursive"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/textViewquestion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="cursive"
+                android:text="To view details click on button"
+                android:textSize="20dp"
+                android:textColor="@color/colorRed" />
+
+            <Button
+                android:id="@+id/buttonupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/calendar_bg"
+                android:layout_weight="1"
+                android:text="SHOW DETAILS" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

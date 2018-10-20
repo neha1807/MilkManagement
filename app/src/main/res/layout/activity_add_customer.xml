@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+
+    tools:context=".AddCustomerActivity">
+
+    <EditText
+        android:id="@+id/editTextname"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextphone"
+        android:layout_width="324dp"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="113dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:hint="Enter 10 digit Phone no."
+        android:inputType="phone" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="139dp"
+        android:layout_height="36dp"
+
+        android:layout_alignBottom="@+id/editTextrate"
+        />
+
+    <EditText
+        android:id="@+id/editTextrate"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editTextphone"
+        android:ems="10"
+        android:hint="Enter rate per litre"
+        android:inputType="number"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:id="@+id/editTextaddress"
+        android:layout_width="331dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="212dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:hint="Enter Address"
+        android:inputType="textPostalAddress" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editTextname"
+        android:layout_marginBottom="174dp"
+        android:text="Select type"
+        android:textColor="@color/colorGreen"
+        android:textSize="20dp"
+        tools:ignore="UnknownId"
+        android:layout_alignLeft="@+id/editTextname" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="316dp"
+        android:layout_height="83dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:background="@drawable/button_round"
+        android:text="SUBMIT" />
+
+    <RadioGroup
+        android:layout_width="347dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="120dp"
+        android:layout_alignParentRight="true">
+
+        <RadioButton
+            android:id="@+id/radioButtoncow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cow" />
+
+        <RadioButton
+            android:id="@+id/radioButtonbuffalo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Buffalo" />
+
+    </RadioGroup>
+
+</RelativeLayout>
